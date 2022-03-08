@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    :root{
+      --transform:65deg;
+      --border-radius:10px ;
+      --width:200px;
+      --base:rgb(53, 218, 89);
+      --spacing:20px;
+    }
+   img{
+       transform: rotate(var(--transform));
+       border-radius: var(--border-radius);
+       width: var(--width);
+      background:var(--base);
+      padding: var(--spacing);
+     margin-top: 100px;
+   }
+   h1{
+    color: var(--base);
+   }
+   label{
+    color: var(--base);
+
+   }
+   body{
+        text-align: center;
+        background: #139549;
+        color: white;
+        font-family: Helvetica, sans-serif ;
+        font-weight: 100;
+        font-size: 50px;
+    }
+    .main{
+        margin-bottom: 50px;
+    }
+    input{
+        width: 100px;
+    }
+</style>
+<body>
+    <div class="main">
+        <h1>Css Variables BY JS</h1>
+        <label for="spacing">spacing:</label>
+        <input id="spacing" type="range" name="spacing" min="10" max="200" value="20" data-sizing="px">
+
+
+        <label for="transform">Transform</label>
+        <input id="transform" type="range" name="transform" min="65" max="360" value="2" data-sizing="deg">
+
+        <label for="border-radius">Border-radius</label>
+        <input id="border-radius" type="range" name="border-radius" min="10" max="200" value="0" data-sizing="px">
+
+        <label for="width">Width</label>
+        <input id="width" type="range" name="width" min="200" max="500"  value="10" data-sizing="px">
+
+        <label for="base">Base:</label>
+        <input id="base" type="color" name="base" value="#ffc600" >
+    </div>
+    <img src="./pexels-fauxels-3183132.jpg" alt="">
+</body>
+<script  src="./script.js" >
+ 
+</script>
+</html>
